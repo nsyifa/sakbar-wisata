@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const heroPic = "/images/hero.png";
+const heroPic = "/images/hero.jpg";
 
 export default function Home() {
   return (

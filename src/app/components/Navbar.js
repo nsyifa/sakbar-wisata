@@ -35,15 +35,15 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 font-koho font-bold text-white ${
-        isRootRoute ? "bg-transparent" : "bg-white shadow-lg text-black"
-      } ${
-        isScrolled ? "bg-white shadow-lg text-black" : ""
-      } transition-all duration-300`}
+      className={`fixed top-0 w-full z-50 font-koho font-bold transition-all duration-300 ${
+        isScrolled || !isRootRoute
+          ? "bg-white shadow-lg text-sakbar-brown"
+          : "bg-transparent text-white"
+      }`}
     >
       <nav className="container py-3 px-7 flex flex-row justify-between items-center">
-        <div className="flex flex-row items-center w-max gap-3 w-10 h-10">
-          <img src={`${logoPic}`}></img>
+        <div className="flex flex-row items-center w-max gap-3">
+          <img className="w-10 h-10" src={`${logoPic}`}></img>
           <h1 className="w-max whitespace-nowrap">Sakerta Barat</h1>
         </div>
 
