@@ -10,6 +10,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "light-beige": "#FFF7E4",
+      },
+      fontFamily: {
+        playfair: ["var(--font-playfair-display)", "serif"],
+        koho: ["var(--font-koho)", "sans-serif"],
       },
     },
   },
