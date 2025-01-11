@@ -2,12 +2,18 @@
 
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const logoPic = "/images/logo-circle.png";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
+
+  const toggleNavbar = () => {
+    setIsCollapsed(!isCollapsed);
+  };
 
   // Check if the user has scrolled past a threshold
   const handleScroll = () => {
@@ -41,18 +47,80 @@ export default function Navbar() {
           : "bg-transparent text-white"
       }`}
     >
-      <nav className="container py-3 px-7 flex flex-row justify-between items-center">
+      <nav className="container w-full py-3 px-7 flex flex-wrap justify-between items-center">
         <div className="flex flex-row items-center w-max gap-3">
           <img className="w-10 h-10" src={`${logoPic}`}></img>
           <h1 className="w-max whitespace-nowrap">Sakerta Barat</h1>
         </div>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 hover:text-sakbar-brown focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded={!isCollapsed}
+          onClick={toggleNavbar}
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
 
-        <div className="flex flex-row gap-8">
-          <h1>Sejarah Desa</h1>
-          <h1>Edukasi Wisata</h1>
-          <h1>Paket Wisata</h1>
-          <h1>Kontak</h1>
-          <h1>Tentang Desa</h1>
+        <div
+          className={`${
+            isCollapsed ? "hidden" : "block"
+          } md:block md:w-autoflex basis-full md:basis-auto`}
+          id="navbar-default  "
+        >
+          <ul className="font-bold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 backdrop-blur-sm">
+            <li>
+              <Link href="/sejarah" className="appearance-none">
+                <h1 className="block py-2 px-3 bg-transparent rounded md:bg-transparent md:p-0">
+                  Sejarah Desa
+                </h1>
+              </Link>
+            </li>
+            <li>
+              <Link href="/sejarah" className="appearance-none">
+                <h1 className="block py-2 px-3 bg-transparent rounded md:bg-transparent md:p-0">
+                  Edukasi Wisata
+                </h1>
+              </Link>
+            </li>
+            <li>
+              <Link href="/sejarah" className="appearance-none">
+                <h1 className="block py-2 px-3 bg-transparent rounded md:bg-transparent md:p-0">
+                  Paket Wisata
+                </h1>
+              </Link>
+            </li>
+            <li>
+              <Link href="/sejarah" className="appearance-none">
+                <h1 className="block py-2 px-3 bg-transparent rounded md:bg-transparent md:p-0">
+                  Kontak
+                </h1>
+              </Link>
+            </li>
+            <li>
+              <Link href="/sejarah" className="appearance-none">
+                <h1 className="block py-2 px-3 bg-transparent rounded md:bg-transparent md:p-0">
+                  Tentang Desa
+                </h1>
+              </Link>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="w-screen bg-slate-300">
       <div
-        className="w-full h-screen bg-fixed"
+        className="w-full h-screen bg-fixed bg-[center_70%] md:bg-[left_100%]"
         style={{ backgroundImage: `url(${heroPic})` }}
       >
         <div
