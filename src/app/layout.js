@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar"; // Import Navbar component
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display", // Custom CSS variable
   subsets: ["latin"], // Choose subsets as needed
-  weight: ["400", "700"], // Specify weights (e.g., normal, bold)
+  weight: ["400", "600", "700"], // Specify weights (e.g., normal, bold)
 });
 
 const koho = KoHo({
