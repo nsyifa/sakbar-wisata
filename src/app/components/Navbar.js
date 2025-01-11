@@ -47,7 +47,7 @@ export default function Navbar() {
           : "bg-transparent text-white"
       }`}
     >
-      <nav className="w-full py-3 px-7 flex flex-wrap justify-between items-center">
+      <nav className="w-full py-3 px-8 flex flex-wrap justify-between items-center">
         <div className="flex flex-row items-center w-max gap-3">
           <img className="w-10 h-10" src={`${logoPic}`}></img>
           <h1 className="w-max whitespace-nowrap">Sakerta Barat</h1>
@@ -84,38 +84,38 @@ export default function Navbar() {
           } lg:block lg:w-autoflex basis-full lg:basis-auto`}
           id="navbar-default  "
         >
-          <ul className="font-bold flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 backdrop-blur-sm">
-            <li>
+          <ul className="font-bold flex flex-col p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 backdrop-blur-sm lg:backdrop-blur-none">
+            <li className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group">
               <Link href="/sejarah" className="appearance-none">
-                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0">
+                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
                   Sejarah Desa
                 </h1>
               </Link>
             </li>
-            <li>
+            <li className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group">
               <Link href="/sejarah" className="appearance-none">
-                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0">
+                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
                   Edukasi Wisata
                 </h1>
               </Link>
             </li>
-            <li>
+            <li className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group">
               <Link href="/sejarah" className="appearance-none">
-                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0">
+                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
                   Paket Wisata
                 </h1>
               </Link>
             </li>
-            <li>
+            <li className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group">
               <Link href="/sejarah" className="appearance-none">
-                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0">
+                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
                   Kontak
                 </h1>
               </Link>
             </li>
-            <li>
+            <li className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group">
               <Link href="/sejarah" className="appearance-none">
-                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0">
+                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
                   Tentang Desa
                 </h1>
               </Link>
