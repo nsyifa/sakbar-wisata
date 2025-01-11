@@ -19,7 +19,7 @@ export default function Home() {
           }}
         >
           <div className="flex flex-col gap-6 items-center justify-center mt-52">
-            <div className="font-playfair font-bold text-8xl text-white tracking-[3.5px] text-center">
+            <div className="font-playfair font-bold sm:text-8xl text-7xl text-white tracking-[1.5px] text-center">
               Jelajah <br /> Sakerta Barat
             </div>
             <Image
@@ -34,7 +34,7 @@ export default function Home() {
               height={100}
               src={flowerSvg}
               alt=""
-              className="absolute sm:top-[12rem] sm:left-[2rem] xl:top-[12rem] xl:left-[24rem] top-[29rem] left-[-0.5rem]"
+              className="absolute sm:top-[12rem] sm:left-[2rem] xl:top-[12rem] xl:left-[24rem] top-[24rem] left-[-0.5rem]"
             />
             <div className="border-white/40 font-bold text-sm border-[1px] bg-white/5 tracking-[0.5px] text-white px-8 py-3 backdrop-blur-sm font-koho cursor-pointer hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out">
               Mulai
