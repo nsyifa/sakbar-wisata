@@ -19,7 +19,7 @@ export default function Navbar() {
   const handleScroll = () => {
     console.log("Y", window.scrollY);
     console.log("inner height", window.innerHeight); // Log scroll position for debugging
-    if (window.scrollY > window.innerHeight - 100) {
+    if (window.scrollY > window.innerHeight - 300) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
