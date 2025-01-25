@@ -3,6 +3,7 @@ import "./globals.css";
 import { Playfair_Display, KoHo } from "next/font/google";
 
 import Navbar from "./components/Navbar"; // Import Navbar component
+import Footer from "./components/Footer";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display", // Custom CSS variable
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
