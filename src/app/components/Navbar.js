@@ -48,10 +48,13 @@ export default function Navbar() {
       }`}
     >
       <nav className="w-full py-3 px-8 flex flex-wrap justify-between items-center">
-        <div className="flex flex-row items-center w-max gap-3">
-          <img className="w-10 h-10" src={`${logoPic}`}></img>
-          <h1 className="w-max whitespace-nowrap">Sakerta Barat</h1>
-        </div>
+        <Link href="/" className="appearance-none">
+          <div className="flex flex-row items-center w-max gap-3">
+            <img className="w-10 h-10" src={`${logoPic}`}></img>
+            <h1 className="w-max whitespace-nowrap">Sakerta Barat</h1>
+          </div>
+        </Link>
+
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -93,14 +96,14 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group">
-              <Link href="/sejarah" className="appearance-none">
+              <Link href="/wisata-edukasi" className="appearance-none">
                 <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
-                  Edukasi Wisata
+                  Wisata Edukasi
                 </h1>
               </Link>
             </li>
             <li className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group">
-              <Link href="/sejarah" className="appearance-none">
+              <Link href="/paket-wisata" className="appearance-none">
                 <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
                   Paket Wisata
                 </h1>
