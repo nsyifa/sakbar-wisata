@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import SlideInComponent from "./components/SlideInComponent";
+import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 // import FlowerSvg from "..../assets/fourp-flower.svg";
@@ -49,7 +50,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full px-8 pb-12 flex md:flex-row flex-col gap-9 md:gap-0 justify-between items-center mt-28">
-            <div className="border-white/40 border-[1px] font-playfair  bg-white/5 text-white px-8 pt-5 pb-7 backdrop-blur-sm cursor-pointer hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out w-96 self-stretch">
+            <div className="border-white/40 border-[1px] font-playfair  bg-white/5 text-white px-8 pt-5 pb-7 backdrop-blur-sm cursor-pointer hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out w-96">
               <h2 className="font-semibold text-2xl tracking-[0.5px]">
                 Sejarah Sakerta Barat
               </h2>
@@ -91,7 +92,7 @@ export default function Home() {
             <div className="absolute left-0 top-[3.4rem] w-full h-[1px] bg-sakbar-brown"></div>
             <div className="hidden xl:block absolute right-[33.5rem] top-[3.4rem] h-[54rem] w-[1px] bg-sakbar-brown"></div>
 
-            <p className="font-koho text-justify text-base lg:text-lg mt-5 pl-2 leading-8">
+            <p className="font-koho text-sakbar-brown text-justify text-base lg:text-lg mt-5 pl-2 leading-8">
               Desa Sakerta sebagai desa agraris dengan berbagai potensi
               pertaniannya menjadi sumber penghidupan bagi warganya. Desa
               Sakerta Barat memiliki berbagai macam UMKM dan produk hasil tani
@@ -223,21 +224,21 @@ export default function Home() {
           <div className="absolute inset-0 bg-[url('/images/bg-flowers.png')] repeat-y bg-cover"></div>
           <div className="relative bg-white h-48 pr-2 flex items-center gap-6 lg:gap-10 flex-row justify-start overflow-visible">
             <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tr-[50px] shadow-md"></SlideInComponent>
-            <span className="font-koho text-xl lg:text-2xl text-sakbar-brown">
+            <span className="font-koho text-xl lg:text-xl text-sakbar-brown">
               Belajar langsung dari para perajin lokal
             </span>
           </div>
 
           <div className="relative bg-white h-48 pl-2 flex items-center gap-6 lg:gap-10 flex-row-reverse justify-start mt-32 lg:mt-44 overflow-visible">
             <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tl-[50px] shadow-md"></SlideInComponent>
-            <span className="font-koho text-xl lg:text-2xl text-sakbar-brown">
+            <span className="font-koho text-xl lg:text-xl text-sakbar-brown">
               Mengeksplorasi proses pembuatan makanan khas
             </span>
           </div>
 
           <div className="relative bg-white h-48 pr-2 flex items-center gap-6 lg:gap-10 flex-row justify-start mt-32 lg:mt-44 overflow-visible">
             <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tr-[50px] shadow-md"></SlideInComponent>
-            <span className="font-koho text-xl lg:text-2xl text-sakbar-brown">
+            <span className="font-koho text-xl lg:text-xl text-sakbar-brown">
               Merasakan kelezatan produk tradisional yang telah turun-temurun
               diwariskan.
             </span>
@@ -245,26 +246,28 @@ export default function Home() {
         </div>
 
         <div className="bg-white w-full py-16 px-10 lg:px-28 relative">
-          <span className="font-koho text-xl lg:text-2xl text-sakbar-brown">
+          <span className="font-koho text-xl lg:text-xl text-sakbar-brown">
             Kami mengajak sobat Sakbar untuk memasuki lorong wisata kuliner
             olahan singkong, gula merah, dan kerajinan unik lainnya yang menjadi
             warisan budaya di Desa Sakerta Barat.
           </span>
-          <div className="hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out absolute -top-8 right-5 lg:right-36">
-            <SlideInComponent className="bg-sakbar-orange flex flex-row gap-3 items-center justify-center px-6 py-2 w-max rounded-[20px] cursor-pointer ">
-              <span className="font-koho font-bold text-white text-2xl">
-                Lihat Selengkapnya
-              </span>
-              <Image
-                width={40}
-                height={40}
-                src={rightArrowIcon}
-                alt=""
-                className=""
-                layout="intrinsic"
-              />
-            </SlideInComponent>
-          </div>
+          <Link href="/sejarah" className="appearance-none">
+            <div className="hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out absolute -top-8 right-5 lg:right-36">
+              <SlideInComponent className="bg-sakbar-orange flex flex-row gap-3 items-center justify-center px-6 py-2 w-max rounded-[20px] cursor-pointer ">
+                <span className="font-koho font-bold text-white text-2xl">
+                  Lihat Selengkapnya
+                </span>
+                <Image
+                  width={40}
+                  height={40}
+                  src={rightArrowIcon}
+                  alt=""
+                  className=""
+                  layout="intrinsic"
+                />
+              </SlideInComponent>
+            </div>
+          </Link>
         </div>
 
         <div className="w-full bg-slate-300 h-80 relative z-20"></div>
@@ -333,48 +336,6 @@ export default function Home() {
               layout="intrinsic"
             />
           </SlideInComponent>
-        </div>
-      </div>
-      <div className="w-full min:h-48 py-7 bg-sakbar-green flex flex-row gap-5 flex-wrap items-center lg:px-12 px-10">
-        <Image
-          width={484}
-          height={516}
-          src={"/images/logo_kuningan.png"}
-          alt=""
-          className="object-contain h-32 w-max"
-        />
-        <div className="flex flex-col justify-between h-32 font-koho text-white">
-          <p>Desa Sakerta Barat</p>
-          <p>Jl. Desa Sakerta Barat No. 12 45562</p>
-          <p>info@desa-sakerta-barat.kuningankab.go.id</p>
-          <div className="flex flex-row gap-2">
-            <a
-              href="https://www.youtube.com/@desasakertabarat4040"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                width={100}
-                height={100}
-                src="/assets/youtube.svg"
-                alt="YouTube"
-                className="h-11 w-11"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/sakertabarat"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                width={100}
-                height={100}
-                src="/assets/instagram.svg"
-                alt="Instagram"
-                className="h-11 w-11"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </div>
