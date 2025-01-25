@@ -224,21 +224,21 @@ export default function Home() {
           <div className="absolute inset-0 bg-[url('/images/bg-flowers.png')] repeat-y bg-cover"></div>
           <div className="relative bg-white h-48 pr-2 flex items-center gap-6 lg:gap-10 flex-row justify-start overflow-visible">
             <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tr-[50px] shadow-md"></SlideInComponent>
-            <span className="font-koho text-xl lg:text-xl text-sakbar-brown">
+            <span className="font-koho text-base lg:text-xl text-sakbar-brown">
               Belajar langsung dari para perajin lokal
             </span>
           </div>
 
           <div className="relative bg-white h-48 pl-2 flex items-center gap-6 lg:gap-10 flex-row-reverse justify-start mt-32 lg:mt-44 overflow-visible">
             <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tl-[50px] shadow-md"></SlideInComponent>
-            <span className="font-koho text-xl lg:text-xl text-sakbar-brown">
+            <span className="font-koho text-base lg:text-xl text-sakbar-brown">
               Mengeksplorasi proses pembuatan makanan khas
             </span>
           </div>
 
           <div className="relative bg-white h-48 pr-2 flex items-center gap-6 lg:gap-10 flex-row justify-start mt-32 lg:mt-44 overflow-visible">
             <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tr-[50px] shadow-md"></SlideInComponent>
-            <span className="font-koho text-xl lg:text-xl text-sakbar-brown">
+            <span className="font-koho text-base lg:text-xl text-sakbar-brown">
               Merasakan kelezatan produk tradisional yang telah turun-temurun
               diwariskan.
             </span>
@@ -246,12 +246,12 @@ export default function Home() {
         </div>
 
         <div className="bg-white w-full py-16 px-10 lg:px-28 relative">
-          <span className="font-koho text-xl lg:text-xl text-sakbar-brown">
+          <span className="font-koho text-base lg:text-xl text-sakbar-brown">
             Kami mengajak sobat Sakbar untuk memasuki lorong wisata kuliner
             olahan singkong, gula merah, dan kerajinan unik lainnya yang menjadi
             warisan budaya di Desa Sakerta Barat.
           </span>
-          <Link href="/sejarah" className="appearance-none">
+          <Link href="/wisata-edukasi" className="appearance-none">
             <div className="hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out absolute -top-8 right-5 lg:right-36">
               <SlideInComponent className="bg-sakbar-orange flex flex-row gap-3 items-center justify-center px-6 py-2 w-max rounded-[20px] cursor-pointer ">
                 <span className="font-koho font-bold text-white text-2xl">
@@ -322,21 +322,23 @@ export default function Home() {
             </SlideInComponent>
           </div>
         </div>
-        <div className="hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out">
-          <SlideInComponent className="bg-sakbar-orange flex flex-row gap-3 items-center justify-center px-6 py-2 w-[22rem] rounded-[20px] cursor-pointer float-right mr-10 lg:mr-36">
-            <span className="font-koho font-bold text-white text-2xl">
-              Lihat Selengkapnya
-            </span>
-            <Image
-              width={40}
-              height={40}
-              src={rightArrowIcon}
-              alt=""
-              className=""
-              layout="intrinsic"
-            />
-          </SlideInComponent>
-        </div>
+        <Link href="/paket-wisata" className="appearance-none">
+          <div className="hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out">
+            <SlideInComponent className="bg-sakbar-orange flex flex-row gap-3 items-center justify-center px-6 py-2 w-[22rem] rounded-[20px] cursor-pointer float-right mr-5 lg:mr-36">
+              <span className="font-koho font-bold text-white text-2xl">
+                Lihat Selengkapnya
+              </span>
+              <Image
+                width={40}
+                height={40}
+                src={rightArrowIcon}
+                alt=""
+                className=""
+                layout="intrinsic"
+              />
+            </SlideInComponent>
+          </div>
+        </Link>
       </div>
     </div>
   );
