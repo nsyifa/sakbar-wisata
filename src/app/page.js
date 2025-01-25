@@ -222,14 +222,14 @@ export default function Home() {
 
         <div className="w-full relative bg-sakbar-light pt-20 lg:pt-32 pb-40 border-b-[1px] border-sakbar-brown">
           <div className="absolute inset-0 bg-[url('/images/bg-flowers.png')] repeat-y bg-cover"></div>
-          <div className="relative bg-white h-48 pr-2 flex items-center gap-6 lg:gap-10 flex-row justify-start overflow-visible">
+          <div className="relative bg-white h-48 pr-2 pl-2 flex items-center gap-6 lg:gap-10 flex-row justify-start overflow-visible">
             <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tr-[50px] shadow-md"></SlideInComponent>
             <span className="font-koho text-base lg:text-xl text-sakbar-brown">
               Belajar langsung dari para perajin lokal
             </span>
           </div>
 
-          <div className="relative bg-white h-48 pl-2 flex items-center gap-6 lg:gap-10 flex-row-reverse justify-start mt-32 lg:mt-44 overflow-visible">
+          <div className="relative bg-white h-48 pl-4 flex items-center gap-6 lg:gap-10 flex-row-reverse justify-start mt-32 lg:mt-44 overflow-visible">
             <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tl-[50px] shadow-md"></SlideInComponent>
             <span className="font-koho text-base lg:text-xl text-sakbar-brown">
               Mengeksplorasi proses pembuatan makanan khas
