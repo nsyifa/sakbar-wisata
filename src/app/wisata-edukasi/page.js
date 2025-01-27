@@ -67,8 +67,8 @@ export default function WisataEdukasi() {
           />
           <EdukasiCard
             images={[
-              "/images/edukasi/gulamerah1.jpeg",
-              "/images/edukasi/gulamerah2.jpg",
+              "/images/edukasi/gulamerah1.jpg",
+              "/images/edukasi/gulamerah2.jpeg",
               "/images/edukasi/gulamerah3.jpg",
             ]}
             title="Gula Merah"
