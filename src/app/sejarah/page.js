@@ -17,7 +17,7 @@ export default function Sejarah() {
       <div className="mt-12 w-full h-[1px] bg-sakbar-brown"></div>
 
       <div className="mt-12 relative z-20 w-full flex flex-col md:grid md:grid-cols-4 px-8 md:px-12 gap-8 md:grid-rows-3">
-        <p className="md:col-span-2 font-koho text-justify text-base md:text-lg w-full">
+        <p className="md:col-span-2 font-koho text-justify text-base md:text-lg w-full text-sakbar-brown">
           Desa Sakerta sebagai desa agraris dengan berbagai potensi pertaniannya
           menjadi sumber penghidupan bagi warganya. Seperti namanya, Sakerta
           yang diambil dari bahasa Sansekerta memiliki arti arah kebaikan juga
@@ -56,7 +56,7 @@ export default function Sejarah() {
           />
         </div>
 
-        <p className="md:col-span-2 font-koho text-justify text-base md:text-lg md:col-start-3 md:col-end-5">
+        <p className="md:col-span-2 font-koho text-justify text-base md:text-lg md:col-start-3 md:col-end-5 text-sakbar-brown">
           Desa Sakerta Barat sejak tahun 1977-sekarang masih menjadi desa yang
           berkecimpung di bidang pertanian. Keseharian masyarakat Desa Sakerta
           Barat sering melakukan perkumpulan warga desa. Bapak Karsono sebagai
