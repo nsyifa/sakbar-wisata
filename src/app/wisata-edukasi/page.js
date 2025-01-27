@@ -8,7 +8,7 @@ export default function WisataEdukasi() {
       {/* Transparent PNG Overlay */}
       <div className="absolute inset-0 bg-[url('/images/bg-flowers.png')]"></div>
 
-      <h1 className="z-20 relative text-6xl font-playfair font-bold text-sakbar-brown text-center">
+      <h1 className="z-20 relative text-6xl font-playfair px-8 font-bold text-sakbar-brown text-center">
         Wisata Edukasi
       </h1>
       <div className="mt-12 w-full h-[1px] bg-sakbar-brown"></div>

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import SlideInComponent from "./components/SlideInComponent";
 import Link from "next/link";
+import { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 // import FlowerSvg from "..../assets/fourp-flower.svg";
@@ -14,6 +15,15 @@ const locationIcon = "/images/location_icon.png";
 const rightArrowIcon = "/assets/right-arrow.svg";
 
 export default function Home() {
+  const mulaiRef = useRef(null);
+  const wisataRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="w-screen bg-slate-300">
       <div
@@ -45,22 +55,30 @@ export default function Home() {
               alt=""
               className="absolute sm:top-[12rem] sm:left-[2rem] xl:top-[12rem] xl:left-[24rem] top-[24rem] left-[-0.5rem]"
             />
-            <div className="border-white/40 font-bold text-sm border-[1px] bg-white/5 tracking-[0.5px] text-white px-8 py-3 backdrop-blur-sm font-koho cursor-pointer hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out">
+            <div
+              className="border-white/40 font-bold text-sm border-[1px] bg-white/5 tracking-[0.5px] text-white px-8 py-3 backdrop-blur-sm font-koho cursor-pointer hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out"
+              onClick={() => scrollToSection(mulaiRef)}
+            >
               Mulai
             </div>
           </div>
           <div className="w-full px-8 pb-12 flex md:flex-row flex-col gap-9 md:gap-0 justify-between items-center mt-28">
-            <div className="border-white/40 border-[1px] font-playfair  bg-white/5 text-white px-8 pt-5 pb-7 backdrop-blur-sm cursor-pointer hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out w-96">
-              <h2 className="font-semibold text-2xl tracking-[0.5px]">
-                Sejarah Sakerta Barat
-              </h2>
-              <p>
-                Desa Sakerta Barat memiliki sejarah yang unik. Yuk, jelajahi
-                lorong sejarah dan terowongan dunia Sakerta Barat!{" "}
-              </p>
-            </div>
+            <Link href="/sejarah" className="appearance-none">
+              <div className="border-white/40 border-[1px] font-playfair  bg-white/5 text-white px-8 pt-5 pb-7 backdrop-blur-sm cursor-pointer hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out w-96">
+                <h2 className="font-semibold text-2xl tracking-[0.5px]">
+                  Sejarah Sakerta Barat
+                </h2>
+                <p>
+                  Desa Sakerta Barat memiliki sejarah yang unik. Yuk, jelajahi
+                  lorong sejarah dan terowongan dunia Sakerta Barat!{" "}
+                </p>
+              </div>
+            </Link>
 
-            <div className="border-white/40 border-[1px] font-playfair  bg-white/5 text-white px-8 pt-5 pb-7 backdrop-blur-sm cursor-pointer hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out w-96">
+            <div
+              className="border-white/40 border-[1px] font-playfair  bg-white/5 text-white px-8 pt-5 pb-7 backdrop-blur-sm cursor-pointer hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out w-96"
+              onClick={() => scrollToSection(wisataRef)}
+            >
               <h2 className="font-semibold text-2xl tracking-[0.5px]">
                 Wisata Sakerta Barat
               </h2>
@@ -72,7 +90,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative bg-white pt-32 w-screen overflow-hidden pb-36">
+      <div
+        className="relative bg-white pt-32 w-screen overflow-hidden pb-36"
+        ref={mulaiRef}
+        id="tentang-desa"
+      >
         {/* Transparent PNG Overlay */}
         <div className="absolute inset-0 bg-[url('/images/bg-flowers.png')]"></div>
 
@@ -206,7 +228,7 @@ export default function Home() {
           <SlideInComponent className="w-[70%] bg-slate-300 h-80 z-20 relative clear-both shadow-md"></SlideInComponent>
         </div>
 
-        <div className="w-full mt-28 text-right relative">
+        <div className="w-full mt-28 text-right relative" ref={wisataRef}>
           <h1 className="relative z-20 text-6xl px-10 lg:px-36 font-playfair font-bold text-sakbar-brown ">
             Wisata Edukasi
           </h1>

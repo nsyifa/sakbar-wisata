@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const logoPic = "/images/logo-circle.png";
 
-export default function Navbar() {
+export default function Navbar({ onScrollToFooter }) {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -109,15 +109,16 @@ export default function Navbar() {
                 </h1>
               </Link>
             </li>
-            <li className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group">
-              <Link href="/sejarah" className="appearance-none">
-                <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
-                  Kontak
-                </h1>
-              </Link>
+            <li
+              className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group cursor-pointer"
+              onClick={onScrollToFooter}
+            >
+              <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
+                Kontak
+              </h1>
             </li>
             <li className="hover:-translate-x-0.5 hover:-translate-y-1 transition-transform duration-300 ease-in-out relative group">
-              <Link href="/sejarah" className="appearance-none">
+              <Link href="/#tentang-desa" className="appearance-none">
                 <h1 className="block py-2 px-3 bg-transparent rounded lg:bg-transparent lg:p-0 group-hover:drop-shadow-xl">
                   Tentang Desa
                 </h1>
