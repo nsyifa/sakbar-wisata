@@ -126,9 +126,31 @@ export default function Home() {
             </p>
 
             <div className="grid grid-cols-3 grid-rows-3 gap-4 pl-2 mt-11 h-[26rem] lg:h-[37rem] drop-shadow-lg">
-              <div className="bg-slate-300 col-start-1 col-end-2 row-start-1 row-end-4 rounded-tl-[50px]"></div>
-              <div className="bg-slate-300 col-start-2 col-end-4 rounded-tr-[50px]"></div>
-              <div className="bg-slate-300 col-start-2 col-end-4 row-start-2 row-end-4 rounded-br-[50px]"></div>
+              <div className="relative bg-slate-300 col-start-1 col-end-2 row-start-1 row-end-4 rounded-tl-[50px] overflow-hidden">
+                <Image
+                  src="/images/homepage/tentang3.jpg"
+                  alt="Bunut"
+                  className="object-cover scale-[1.35]"
+                  objectPosition="70% 30%"
+                  fill
+                />
+              </div>
+              <div className="relative bg-slate-300 col-start-2 col-end-4 rounded-tr-[50px] overflow-hidden">
+                <Image
+                  src="/images/homepage/tentang2.jpg"
+                  alt="Sawah"
+                  className="object-cover"
+                  fill
+                />
+              </div>
+              <div className="relative bg-slate-300 col-start-2 col-end-4 row-start-2 row-end-4 rounded-br-[50px] overflow-hidden">
+                <Image
+                  src="/images/homepage/tentang1.jpg"
+                  alt="Sapi Bunut"
+                  className="object-cover"
+                  fill
+                />
+              </div>
             </div>
           </div>
 
@@ -223,9 +245,32 @@ export default function Home() {
         </div>
 
         <div className="clearfix mt-28">
-          <SlideInComponent className="w-[70%] bg-slate-300 h-80 relative shadow-md z-40"></SlideInComponent>
-          <SlideInComponent className="w-[80%] bg-slate-300 h-80 float-right relative shadow-md z-30"></SlideInComponent>
-          <SlideInComponent className="w-[70%] bg-slate-300 h-80 z-20 relative clear-both shadow-md"></SlideInComponent>
+          <SlideInComponent className="w-[70%] bg-slate-300 h-96 border-[1px] border-sakbar-brown relative shadow-md z-40">
+            <Image
+              src="/images/homepage/lokasi1.jpg"
+              alt="Persawahan"
+              className="object-cover"
+              fill
+            />
+          </SlideInComponent>
+          <SlideInComponent className="w-[80%] bg-slate-300 h-96 border-[1px] border-sakbar-brown float-right relative shadow-md z-30">
+            <Image
+              src="/images/homepage/lokasi3.jpg"
+              alt="Kabin Bagarurung"
+              className="object-cover"
+              objectPosition="20% 70%"
+              fill
+            />
+          </SlideInComponent>
+          <SlideInComponent className="w-[70%] bg-slate-300 h-96 border-[1px] border-sakbar-brown z-20 relative clear-both shadow-md">
+            <Image
+              src="/images/homepage/lokasi2.jpg"
+              alt="Jala Bunut"
+              className="object-cover"
+              objectPosition="20% 70%"
+              fill
+            />
+          </SlideInComponent>
         </div>
 
         <div className="w-full mt-28 text-right relative" ref={wisataRef}>
@@ -245,21 +290,45 @@ export default function Home() {
         <div className="w-full relative bg-sakbar-light pt-20 lg:pt-32 pb-40 border-b-[1px] border-sakbar-brown">
           <div className="absolute inset-0 bg-[url('/images/bg-flowers.png')] repeat-y bg-cover"></div>
           <div className="relative bg-white h-48 pr-2 pl-2 flex items-center gap-6 lg:gap-10 flex-row justify-start overflow-visible">
-            <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tr-[50px] shadow-md"></SlideInComponent>
+            <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tr-[50px] shadow-md relative overflow-hidden border-[1px] border-sakbar-brown">
+              <Image
+                src="/images/homepage/edukasi1.jpg"
+                alt="Goreng Singkong"
+                className="object-cover"
+                objectPosition="20% 70%"
+                fill
+              />
+            </SlideInComponent>
             <span className="font-koho text-base lg:text-xl text-sakbar-brown">
               Belajar langsung dari para perajin lokal
             </span>
           </div>
 
           <div className="relative bg-white h-48 pl-4 flex items-center gap-6 lg:gap-10 flex-row-reverse justify-start mt-32 lg:mt-44 overflow-visible">
-            <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tl-[50px] shadow-md"></SlideInComponent>
+            <SlideInComponent className="relative overflow-hidden bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tl-[50px] shadow-md border-[1px] border-sakbar-brown">
+              <Image
+                src="/images/homepage/edukasi2.jpg"
+                alt="Pencetakan Gemblong"
+                className="object-cover"
+                objectPosition="20% 70%"
+                fill
+              />
+            </SlideInComponent>
             <span className="font-koho text-base lg:text-xl text-sakbar-brown">
               Mengeksplorasi proses pembuatan makanan khas
             </span>
           </div>
 
           <div className="relative bg-white h-48 pr-2 flex items-center gap-6 lg:gap-10 flex-row justify-start mt-32 lg:mt-44 overflow-visible">
-            <SlideInComponent className="bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tr-[50px] shadow-md"></SlideInComponent>
+            <SlideInComponent className="relative overflow-hidden bg-slate-300 h-[110%] w-[100%] lg:w-[50%] mt-28 rounded-tr-[50px] shadow-md border-[1px] border-sakbar-brown">
+              <Image
+                src="/images/homepage/edukasi3.jpg"
+                alt="Keripik Pisang"
+                className="object-cover"
+                objectPosition="20% 95%"
+                fill
+              />
+            </SlideInComponent>
             <span className="font-koho text-base lg:text-xl text-sakbar-brown">
               Merasakan kelezatan produk tradisional yang telah turun-temurun
               diwariskan.
@@ -292,7 +361,15 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="w-full bg-slate-300 h-80 relative z-20"></div>
+        <div className="w-full bg-slate-300 h-80 relative z-20">
+          <Image
+            src="/images/homepage/edukasi4.jpg"
+            alt="Gemblong"
+            className="object-cover"
+            objectPosition="20% 25%"
+            fill
+          />
+        </div>
 
         <div className="w-full mt-28 relative">
           <h1 className="relative z-20 text-6xl px-10 lg:px-36 font-playfair font-bold text-sakbar-brown ">
@@ -311,7 +388,15 @@ export default function Home() {
           <div className="hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out w-[22rem]">
             {" "}
             <SlideInComponent className="shadow-xl cursor-pointer rounded-t-[50px] w-full overflow-hidden border-sakbar-brown border-[1px]">
-              <div className="bg-slate-300 w-full h-96"></div>
+              <div className="bg-slate-300 w-full h-96 relative">
+                <Image
+                  src="/images/homepage/paket1.jpg"
+                  alt="Karodeh"
+                  className="object-cover"
+                  objectPosition="20% 50%"
+                  fill
+                />
+              </div>
               <div className="bg-white w-full h-40 flex justify-center items-center px-5 text-center">
                 <span className="font-koho font-bold text-sakbar-brown text-2xl">
                   Paket Jelajah Kuliner Sakbar
@@ -323,7 +408,15 @@ export default function Home() {
           <div className="hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out w-[22rem]">
             {" "}
             <SlideInComponent className="shadow-xl cursor-pointer rounded-t-[50px] w-full overflow-hidden border-sakbar-brown border-[1px]">
-              <div className="bg-slate-300 w-full h-96"></div>
+              <div className="bg-slate-300 w-full h-96 relative">
+                <Image
+                  src="/images/homepage/paket2.jpg"
+                  alt="Hutan Pinus"
+                  className="object-cover"
+                  objectPosition="70% 50%"
+                  fill
+                />
+              </div>
               <div className="bg-white w-full h-40 flex justify-center items-center px-5 text-center">
                 <span className="font-koho font-bold text-sakbar-brown text-2xl">
                   Paket Walking Tour
@@ -335,7 +428,15 @@ export default function Home() {
           <div className="hover:-translate-x-0.5 hover:-translate-y-1 transition-all duration-300 ease-in-out w-[22rem]">
             {" "}
             <SlideInComponent className="shadow-xl cursor-pointer rounded-t-[50px] w-full overflow-hidden border-sakbar-brown border-[1px]">
-              <div className="bg-slate-300 w-full h-96"></div>
+              <div className="bg-slate-300 w-full h-96 relative">
+                <Image
+                  src="/images/homepage/paket3.jpg"
+                  alt="Taman Bunuts"
+                  className="object-cover"
+                  objectPosition="50% 50%"
+                  fill
+                />
+              </div>
               <div className="bg-white w-full h-40 flex justify-center items-center px-5 text-center">
                 <span className="font-koho font-bold text-sakbar-brown text-2xl">
                   Paket Premium Jejak Sakerta Barat

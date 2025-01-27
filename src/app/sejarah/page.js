@@ -37,8 +37,24 @@ export default function Sejarah() {
           Desa Sakerta Barat mulai tahun 1979-1987.
         </p>
 
-        <div className="bg-slate-300 w-full col-span-2 md:h-full h-72"></div>
-        <div className="md:row-span-1 bg-slate-300 w-full md:col-span-4 md:h-full h-72"></div>
+        <div className="relative bg-slate-300 w-full col-span-2 md:h-full h-72">
+          <Image
+            src="/images/sejarah/sejarah1.jpg"
+            alt="Pemekaran Desa Sakerta"
+            className="object-cover"
+            objectPosition=""
+            fill
+          />
+        </div>
+        <div className="relative md:row-span-1 bg-slate-300 w-full md:col-span-4 md:h-full h-72">
+          <Image
+            src="/images/sejarah/sejarah2.jpg"
+            alt="Makam Eyang Dayi"
+            className="object-cover"
+            objectPosition=""
+            fill
+          />
+        </div>
 
         <p className="md:col-span-2 font-koho text-justify text-base md:text-lg md:col-start-3 md:col-end-5">
           Desa Sakerta Barat sejak tahun 1977-sekarang masih menjadi desa yang
@@ -55,8 +71,24 @@ export default function Sejarah() {
           menuju budaya yang berbau Islami.
         </p>
 
-        <div className="md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-2 bg-slate-300 w-full md:h-full h-72"></div>
-        <div className="md:row-start-3 md:row-end-4 md:col-start-2 md:col-end-3 bg-slate-300 w-full md:h-full h-72"></div>
+        <div className="relative md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-2 bg-slate-300 w-full md:h-full h-72">
+          <Image
+            src="/images/sejarah/sejarah3.jpg"
+            alt="Makam Eyang Dayi 2"
+            className="object-cover"
+            objectPosition=""
+            fill
+          />
+        </div>
+        <div className="relative md:row-start-3 md:row-end-4 md:col-start-2 md:col-end-3 bg-slate-300 w-full md:h-full h-72">
+          <Image
+            src="/images/sejarah/sejarah4.jpg"
+            alt="Petani"
+            className="object-cover"
+            objectPosition=""
+            fill
+          />
+        </div>
       </div>
       <Image
         width={950}
