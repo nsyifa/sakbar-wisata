@@ -391,7 +391,7 @@ export default function Home() {
               <div className="bg-slate-300 w-full h-96 relative">
                 <Image
                   src="/images/homepage/paket1.jpg"
-                  alt="Karodeh"
+                  alt="Kodehel"
                   className="object-cover"
                   objectPosition="20% 50%"
                   fill

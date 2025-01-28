@@ -20,7 +20,7 @@ export default function PaketWisata() {
             "/images/paket/paket14.jpg",
           ]}
           title="Paket Jelajah Kuliner Sakbar"
-          desc="Pada paket 75.000 ini, wisatawan mendapatkan pengalaman menelusuri empat wisata edukasi sejarah kuliner yaitu singkong, karodeh, gemblong, dan kripik pisang. Hal ini membuat para wisatawan merasakan pengalaman langsung pembuatan singkong, karodeh, gemblong, dan kripik pisang. dari bahan mentah menjadi sebuah produk yang memiliki nilai jual, belajar pengemasan dan pemasaran karodeh, dan dapat membawa pulang serta merasakan langsung produk singkong, karodeh, gemblong, dan kripik pisang ini."
+          desc="Pada paket 75.000 ini, wisatawan mendapatkan pengalaman menelusuri empat wisata edukasi sejarah kuliner yaitu singkong, kodehel, gemblong, dan kripik pisang. Hal ini membuat para wisatawan merasakan pengalaman langsung pembuatan singkong, kodehel, gemblong, dan kripik pisang. dari bahan mentah menjadi sebuah produk yang memiliki nilai jual, belajar pengemasan dan pemasaran kodehel, dan dapat membawa pulang serta merasakan langsung produk singkong, kodehel, gemblong, dan kripik pisang ini."
           price="75.000"
         ></PaketCard>
 

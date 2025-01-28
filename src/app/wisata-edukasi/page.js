@@ -101,8 +101,8 @@ export default function WisataEdukasi() {
               "/images/edukasi/karodeh2.jpg",
               "/images/edukasi/karodeh3.jpg",
             ]}
-            title="Karodeh"
-            desc="Pada wisata edukasi karodeh, wisatawan akan diajak menelusuri sejarah pembuatan karodeh di Desa Sakerta Barat, pengalaman langsung pembuatan karodeh dari bahan mentah menjadi sebuah produk yang memiliki nilai jual, belajar pengemasan dan pemasaran karodeh, dan dapat membawa pulang serta merasakan langsung produk karodeh ini."
+            title="Kodehel"
+            desc="Pada wisata edukasi kodehel, wisatawan akan diajak menelusuri sejarah pembuatan kodehel di Desa Sakerta Barat, pengalaman langsung pembuatan kodehel dari bahan mentah menjadi sebuah produk yang memiliki nilai jual, belajar pengemasan dan pemasaran kodehel, dan dapat membawa pulang serta merasakan langsung produk kodehel ini."
             price="Rp 30.000/orang minimal 10 orang"
           />
         </div>
